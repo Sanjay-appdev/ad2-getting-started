@@ -3,6 +3,8 @@
     <h1>
       List of all movies
     </h1>
+
+    <a href="/movies/new">Add a new movie</a>
   </div>
 </div>
 
@@ -14,7 +16,7 @@
       Add a new movie
     </h2>
 
-    <h2><%= time_ago_in_words(Time.now) %></h2>
+    <!--h2><%= time_ago_in_words(Time.now) %></h2-->
 
     <form action="/movies" method="post">
        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
